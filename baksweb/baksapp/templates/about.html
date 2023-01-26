@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body>
+{% block content %}
+    <div class="box center">
+        <h1>About The Developer</h1>
+
+        <p>
+            Hi There👋My name is amdesew and here's a little about me i am a computer programmer💻 
+            who have coded day<a href="/admin">☀️</a> and night🌒 for past year i don't code just for money🤑 or fame 
+            i do coding for resting my mind or for entertaining the only thing in this world 
+            which accepts you with the open hand whether you are rich or poor, ugly or beautifull, 
+            black or white or whatever you are coding accepts you with the open hand. 
+            i have been raised to be a successfull businessman to manage my bussiness using the latest AI that are existed.
+        </p>
+    </div>
+
+
+    <style>
+        .center{
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box{
+            animation: appear 5s;
+        }
+
+        h1{
+            margin-top: 50px;
+            font-family: arial;
+        }
+
+        h1:hover{
+            color: aquamarine;
+        }
+
+        p{
+            font-size: 20px;
+            font-family: arial;
+        }
+
+        @keyframes appear{
+            from {opacity: 0%;}
+            to {opacity: 100%;}
+        }
+    </style>
+
+
+
+
+    {% endblock %}
+</body>
+</html>

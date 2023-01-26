@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+{% block content %}
+    
+    <div class="box center">
+        <h1>Student Registeration</h1>
+
+        <form>
+            <h2>Name</h2>
+            <input>
+            
+            <h2>Gender</h2>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            
+            <h2>Education Level</h2>
+            <select>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+                <option>Bachelors Degree</option>
+                <option>Master</option>
+                <option>PHD..</option>
+            </select>
+            
+            <h2>Adress</h2>
+            <input>
+
+            <h2>Wanted Driving Licence</h2>
+            <select>
+                <option>Taxi-1</option>
+                <option>Automobile</option>
+                <option>Hezbe-1</option>
+                <option>Dereke-1</option>
+                <option>Motor</option>
+            </select>
+
+            <h2>Phone Number</h2>
+            <input>
+
+            <br><br>
+            <button>Submit</button>
+
+        </form>
+
+    </div>
+
+    <style>
+        .center{
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box{
+            animation: appear 5s;
+        }
+
+        h1{
+            font-family: arial;
+            margin-top: 50px;
+        }
+
+        h1:hover{
+            color: aquamarine;
+        }
+
+        h2{
+            font-size: 18px;
+            font-family: arial;
+        }
+
+        input{
+            height: 30px;
+            width: 250px;
+            color: white;
+            border-radius: 50px;
+            background-color: transparent;
+        }
+
+        select{
+            height: 35px;
+            width: 255px;
+            color: white;
+            border-radius: 20px;
+            background-color: transparent;
+        }
+
+        option{
+            color: black;
+        }
+
+        button{
+            height: 35px;
+            width: 100px;
+            color: white;
+            border-radius: 20px;
+            border-color: white;
+            background-color: transparent;
+        }
+
+        @keyframes appear{
+            from {opacity: 0%;}
+            to {opacity: 100%;}
+        }
+    </style>
+
+
+{% endblock %}
+</body>
+</html>

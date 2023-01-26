@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0c269e5b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="center">
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/about">Developers</a></li>
+            <li><a href="/youtube">Youtube Tutorials</a></li>
+            <li><a href="/result">Student Result</a></li>
+            <li><a href="/register" id="register">Student Register</a></li>
+        </ul>
+    </nav>
+
+    <style>
+        ul{
+            overflow: hidden;
+            list-style-type: none;
+        }
+        
+        li{
+            float: right;
+            padding-right: 14px;
+        }
+
+        li:first-child{
+            float: left;
+        }
+        
+        a{
+            color: white;
+            font-size: 16px;
+            font-family: arial;
+            background: transparent;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: aquamarine;
+        }
+
+        body{
+            color: white;
+            background-size: cover;
+            background-image: url('https://wallpaperaccess.com/full/1385593.jpg');
+        }
+
+    </style>
+
+    <style media="all and (max-width: 470px)">
+        #register{
+            display: none;
+        }
+         
+    </style>
+
+
+    {% block content %}
+
+    {% endblock %}
+    
+</body>
+</html>
